@@ -77,6 +77,10 @@ rbenchmark::benchmark(
 #1 inPackage_vec        10000    1.50    1.087      0.68     0.81
 #2 sourceCpp_vec        10000    1.38    1.000      0.56     0.81
 
+# Ubuntu-desktop
+#test replications elapsed relative user.self sys.self
+#1 inPackage_vec        10000   1.038    1.019     1.032    0.006
+#2 sourceCpp_vec        10000   1.019    1.000     0.996    0.023
 
 
 rbenchmark::benchmark(
@@ -90,6 +94,10 @@ rbenchmark::benchmark(
 #1 inPackage_mat_rcpp           50   13.32    1.047     12.14     0.72
 #2 sourceCpp_mat_rcpp           50   12.72    1.000     11.75     0.75
 
+# Ubuntu-desktop
+#test replications elapsed relative user.self sys.self
+#1 inPackage_mat_rcpp           50  22.675    1.014    21.334    1.345
+#2 sourceCpp_mat_rcpp           50  22.370    1.000    21.016    1.346
 
 rbenchmark::benchmark(
   inPackage_mat_arma = testRcppArmadillo::addMatricesArmadillo_inPackage(mat1, mat2),
@@ -102,4 +110,7 @@ rbenchmark::benchmark(
 #1 inPackage_mat_arma          100    4.84    1.000      2.08     2.74
 #2 sourceCpp_mat_arma          100    5.75    1.188      2.45     3.05
 
-
+# Ubuntu-desktop
+#test replications elapsed relative user.self sys.self
+#1 inPackage_mat_arma          100   4.853    1.005     2.164    2.674
+#2 sourceCpp_mat_arma          100   4.831    1.000     2.225    2.588
